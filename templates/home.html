@@ -1,0 +1,27 @@
+<div class="jumbotron">
+				<h2>
+					{{title}}
+				</h2>
+				<p>
+					This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
+				</p>
+				<p>
+					<ul ng-repeat="item in items">
+						<li>{{item}}</li>
+					</ul>
+				</p>
+				<p>
+					<b>Friends</b><hr/>
+					<ul>
+						<li ng-class="{'special': !friend.isSpecial}" ng-repeat="friend in friends">
+
+					<input type="text" class="form-control" ng-model="friend.name"/>
+					<input type="text" class="form-control" ng-model="friend.age"/>
+					<button ng-click="friends.splice($index,1)" class="btn btn-danger">-</button>
+						</li>
+					</ul>
+				</p>
+				<p>
+					<button class="btn btn-primary btn-large" ng-click="save()" >Save</button>
+				</p>
+			</div>

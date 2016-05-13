@@ -1,0 +1,5 @@
+[
+	{"name":"Will","age":30, "isSpecial":false},
+	{"name":"Laura","age":26,"isSpecial":false},
+	{"name":"Azizah","age":23,"isSpecial":true}
+]
